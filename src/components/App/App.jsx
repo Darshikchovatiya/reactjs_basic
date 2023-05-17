@@ -1,12 +1,14 @@
 import { useState } from 'react'
-import car from './assets/car.jpg'
-import './App.css'
+import car from '../../assets/car.jpg'
+import '../App/App.css'
+import List from '../List/List'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <List />
       <div className="carlogo">
         <img src={car} className="carimg" alt="car logo" />
       </div>
